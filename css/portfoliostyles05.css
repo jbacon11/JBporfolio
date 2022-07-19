@@ -1,0 +1,85 @@
+/* Jeremy Bargy 10/21/19 */
+
+/*add background color*/
+body {background-color: gray;
+}
+
+header {background-color:aqua;
+border-radius: 0.5em;
+margin-top:0.2em;
+text-align: center;
+padding: 0.5em;
+border:0.015em black solid;
+margin-bottom: 1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+
+footer {background-color:aqua;
+text-align:center;
+font-size: .90em;
+padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+nav { background-color:aqua;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+/*Float img in header to the left*/
+.float-left {float: left;}
+
+/*styles for mobile begin*/
+
+/*add space between image and content floated to right and conent below*/
+img{max-width: 100%;}
+
+/*remove bullets on list items in nav section*/
+nav ul {padding: 0;
+		margin-top:0.5em;
+		margin-bottom:0.5em;}
+	
+nav li {list-style-type: none;
+border-radius: 2em;
+margin: 0.3em;
+padding: 0.4em;}
+
+nav li a {color: #FFFFFF;
+text-decoration:none;}
+
+/*center content using the div id of outerwrapper*/
+#outerwrapper {width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*clear the float with the main content and add a light background color*/
+#main {clear: both;
+background-color: aqua;
+padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+/**/
+.myname {font-family: Futura, Calibri, sans-serif;
+font-size:2em;
+}
+
+/*style display the mobile class*/
+.mobile {display: inline;}
+
+/*style display the desktop class*/
+.desktop {display: none;}

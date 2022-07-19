@@ -1,0 +1,179 @@
+/* Jeremy Bargy 11/29/19 */
+
+/*add background color*/
+body {
+	background: -moz-linear-gradient(bottom right, #FFFFFF, #808080, #000000); /* Firefox */
+	background: -o-linear-gradient(bootom right, #FFFFFF, #808080, #000000); /* Opera */
+	background: -webkit-linear-gradient(left top, #FFFFFF, #808080, #000000); /* Chrome, Safari */
+	background: linear-gradient(to bottom right, #FFFFFF, #808080, #000000);
+	background-attachment: fixed;
+}
+
+header {background-color:aqua;
+border-radius: 0.5em;
+margin-top:0.2em;
+text-align: center;
+padding: 0.5em;
+border:0.015em black solid;
+margin-bottom: 1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+
+footer {background-color:aqua;
+text-align:center;
+font-size: .90em;
+padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+nav { background-color:aqua;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+/*Float img in header to the left*/
+.float-left {float: left;}
+
+/*styles for mobile begin*/
+
+/*add space between image and content floated to right and conent below*/
+img{max-width: 100%;}
+
+/*remove bullets on list items in nav section*/
+nav ul {padding: 0;
+		margin-top:0.5em;
+		margin-bottom:0.5em;}
+	
+nav li {list-style-type: none;
+border-radius: 2em;
+margin: 0.3em;
+padding: 0.4em;}
+
+nav li a {color: #FFFFFF;
+text-decoration:none;}
+
+/*center content using the div id of outerwrapper*/
+#outerwrapper {width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*clear the float with the main content and add a light background color*/
+#main {clear: both;
+background-color: aqua;
+padding: 1em;
+border:0.015em black solid;
+border-radius: 1em;
+margin-bottom:1em;
+box-shadow: 1em 1em 1em #404040;
+}
+
+/**/
+.myname {font-family: Futura, Calibri, sans-serif;
+font-size:2em;
+}
+
+/*style display the mobile class*/
+.mobile {display: inline;}
+
+/*style display the desktop class*/
+.desktop {display: inline;}
+
+/*media query for tablet viewport targets screen sixe with a minimum width of 660px.*/
+@media only screen and (min-width: 660px) {
+	
+/* Style specifies horizong display for navigation links */
+nav li {
+	display: inline;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	width: 18%;
+}
+
+/*Style specifies clear and top margin properties for the main element*/
+nav{
+	clear: left;
+	margin-top:1em; 
+	float: left;
+	margin-bottom: 1em;
+	width: 95%;
+}
+
+/*Style specifies clear and top margin properties for the main element*/
+main{
+	clear: left;
+	margin-top:4em; 
+}
+
+/* Style specifies to hide the mobile class*/
+.mobile{
+	display: inline;
+}
+
+/* Style specifies to display the desktop class*/
+.desktop {
+	display: inline;
+}
+}
+
+/*media query for desktop viewport targets screen size with a minimum width of 830px.*/
+@media only screen and (min-width: 830px) {
+	
+/* Style specifies a width for container*/
+#outerwrapper{
+	width: 80%;
+}
+
+/* style for nav specifies a float, margin, and width*/
+nav{
+	float: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 96%;
+}
+
+/* Style specifies margin and padding for the unordered list within the nav*/
+nav ul {
+	margin: 0;
+	padding-left: 0.50%;
+	padding-right: 0.50%;
+}
+
+/* Style for navigation list items specifies a border radius, border, margin, width and padding */
+nav li {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 20%;
+}
+
+/*Style rules for pseudo-classes */
+nav li a:link {
+	color: #FFFFFF;
+}
+
+nav li a:visited {
+	color: #CCCCFF;
+}
+
+nav li a:hover {
+	color: #9D9D93;
+	font-style: italic;
+}
+
+
+
+}

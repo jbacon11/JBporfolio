@@ -1,0 +1,64 @@
+/* Jeremy Bargy 10/17/19 */
+
+/*add background color*/
+body {background-color: gray;
+}
+
+header {background-color:aqua;
+padding: 3%;
+border:2px black solid;
+border-radius: 25px;
+margin-bottom:3%;
+box-shadow: 12px 12px 12px #404040;
+}
+
+footer {background-color:aqua;
+text-align:center;
+font-size: .90em;
+padding: 1%;
+border:2px black solid;
+margin-bottom:2%;
+border-radius: 25px;
+box-shadow: 12px 12px 12px #404040;
+}
+
+nav { background-color:aqua;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 3%;
+	border-radius: 25px;
+	border: 2px black solid;
+	margin-bottom:3%;
+	box-shadow: 12px 12px 12px #404040;
+}
+
+/*Float img in header to the left*/
+.float-left {float: left;}
+
+/*add space between image and content floated to right and conent below*/
+img{margin-right: 3%;
+margin-bottom: 2%;}
+
+/*remove bullets on list items in nav section*/
+nav li {list-style-type: none;}
+
+/*center content using the div id of outerwrapper*/
+#outerwrapper {width: 70%;
+margin: 0 auto 0 auto;
+}
+
+/*clear the float with the main content and add a light background color*/
+#main {clear: both;
+background-color: aqua;
+padding: 3%;
+border:2px black solid;
+border-radius: 25px;
+margin-bottom:3%;
+box-shadow: 12px 12px 12px #404040;
+}
+
+/**/
+.myname {font-family: Futura, Calibri, sans-serif;
+font-size:2em;
+}
